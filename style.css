@@ -4,13 +4,13 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f1f8f2;  /* very light green */
-  color: #2e4d32;  /* dark muted green */
+  background-color: #f1f8f2; /* very light green */
+  color: #2e4d32; /* dark, muted green */
 }
 
 /* Navigation */
 header {
-  background-color: #2e7d32; /* green */
+  background-color: #2e7d32; /* vibrant green */
   color: #fff;
   padding: 10px 0;
   position: sticky;
@@ -54,7 +54,7 @@ nav ul li a.active {
 
 /* Subpage Header */
 .subpage-header {
-  background-color: #388e3c;  /* a brighter green */
+  background-color: #388e3c;  /* brighter green */
   text-align: center;
   padding: 30px 0;
   margin-bottom: 20px;
@@ -80,7 +80,7 @@ p {
 
 /* Interactive Lab Styles */
 #interactive-lab {
-  background-color: #e8f5e9;  /* light green background */
+  background-color: #e8f5e9; /* light green background */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 40px;
@@ -119,6 +119,7 @@ p {
   padding: 10px;
   text-align: center;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
 }
 
 .drop-zone:hover {
@@ -131,7 +132,7 @@ p {
   margin-top: 10px;
 }
 
-/* Submission Info (replaces footer) */
+/* Submission Banner */
 .submission-info {
   background-color: #2e7d32;
   color: #fff;
@@ -141,17 +142,12 @@ p {
   font-weight: bold;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 /* Confetti Animation Styles */
 .confetti {
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: #c5e1a5; /* light green */
+  background-color: #c5e1a5;
   opacity: 0.9;
   animation: fall 1s linear forwards;
   z-index: 10;
@@ -168,3 +164,8 @@ p {
   }
 }
 
+/* FadeIn Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
